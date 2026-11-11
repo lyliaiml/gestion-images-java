@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.TextField?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="controller.MainController">
+
+    <top>
+        <HBox spacing="5" style="-fx-padding: 10;">
+            <Button text="📂" onAction="#openImage"/>
+            <Button text="Gray" onAction="#applyGray"/>
+            <Button text="Sepia" onAction="#applySepia"/>
+            <Button text="Prewitt" onAction="#applyPrewitt"/>
+            <Button text="Swap" onAction="#applySwap"/>
+
+            <TextField fx:id="tagField" promptText="Tag"/>
+            <Button text="Add" onAction="#addTag"/>
+
+            <Button text="💾" onAction="#saveData"/>
+
+            <Button text="⟲" onAction="#rotateLeft"/>
+            <Button text="⟳" onAction="#rotateRight"/>
+            <Button text="⇋" onAction="#flipHorizontal"/>
+            <Button text="⇅" onAction="#flipVertical"/>
+
+            <Button text="Encrypt" onAction="#encryptImage"/>
+            <Button text="Decrypt" onAction="#decryptImage"/>
+        </HBox>
+    </top>
+
+    <center>
+        <ImageView fx:id="imageView"
+                   fitWidth="500"
+                   fitHeight="400"
+                   preserveRatio="true"/>
+    </center>
+
+</BorderPane>
