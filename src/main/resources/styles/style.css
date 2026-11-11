@@ -1,0 +1,23 @@
+.root {
+    -fx-background-color: #f4f4f4;
+}
+
+.button {
+    -fx-background-color: #dddddd;
+    -fx-text-fill: black;
+    -fx-font-size: 12px;
+}
+
+.button:hover {
+    -fx-background-color: #cccccc;
+}
+
+.text-field {
+    -fx-background-color: white;
+    -fx-border-color: gray;
+}
+
+.image-view {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+}
